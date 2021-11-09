@@ -1,21 +1,31 @@
 #include <iostream>
-
+#include <vector>
 using namespace std;
 
 void number_of_products_div()
 {
-    cout<<"Hello world!"<<endl;
+    cout<<"Vvedi chislo"<<endl;
     /**
-    1. считать и запомнить числа
+    1. считать и запомнить числа +
     2. вывести все пары чисел
     3. вместо пар вывести произведения
     4. проверить делимость произведений
     5. Посчитать и вывести кол-во подходящих проиведений
     */
+    int n(0);
+    cin>>n;
+    vector<int> numbers(n,0);
+    for (int i(0); i<n; i++){
+        cin>>numbers[i];
+    }
+    for (int i(0); i<n; i++){
+        cout<<numbers[i]<< " ";
+    }
+
 }
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    number_of_products_div();
     return 0;
 }
