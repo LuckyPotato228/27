@@ -19,6 +19,7 @@ void number_of_products_div()
     }
     no = n - n55 - n5 - n11;
     cout<< n55*n5 +n55*n11 +n55*(n55-1)/2 + n5+n11 << endl;
+
 }
 int main()
 {
