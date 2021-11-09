@@ -18,10 +18,10 @@ void number_of_products_div()
     for (int i(0); i<n; i++){
         cin>>numbers[i];
     }
-    for (int i(0); i<n; i++){
-        cout<<numbers[i]<< " ";
+    for (int j(0); j<n; j++){
+        for (int i(j+1); i<n; i++)
+        cout<<numbers[j]<< " "<< numbers[i]<<endl;
     }
-
 }
 
 int main()
