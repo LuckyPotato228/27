@@ -8,8 +8,8 @@ void max_sum_div()
     ifstream ifs("data.txt");
     /**
    +1. считать и сохранить все числа
-    2. вывести все пары
-    3. вместо пары вывести суммы
+   +2. вывести все пары
+   +3. вместо пары вывести суммы
     4. провести делимость сумм
     5. вывести только наиольшую сумму
     */
@@ -22,7 +22,7 @@ void max_sum_div()
     cout<<endl;
     for (int j(0); j<n; j++){
         for (int i(j+1); i<n; i++)
-        cout<<numbers[j]<< " "<< numbers[i]<<endl;
+        cout<<numbers[j] + numbers[i]<<endl;
     }
 
 }
