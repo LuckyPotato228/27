@@ -1,2 +1,4 @@
 *.exe
 *.o
+*.layout
+/27/27.depend
