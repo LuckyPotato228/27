@@ -18,8 +18,9 @@ void max_sum_div()
         cin>> numbers[i];
     }
     cout<<endl;
-    for(int i = 0; i<n; i++){
-        cout<<numbers[i]<<" ";
+    for (int j(0); j<n; j++){
+        for (int i(j+1); i<n; i++)
+        cout<<numbers[j]<< " "<< numbers[i]<<endl;
     }
 
 }
