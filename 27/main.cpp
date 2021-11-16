@@ -1,9 +1,11 @@
 #include <iostream>
-#include  <vector>
+#include <vector>
+#include <fstream>
 using namespace std;
 
 void max_sum_div()
 {
+    ifstream ifs("data.txt");
     /**
    +1. считать и сохранить все числа
     2. вывести все пары
@@ -12,10 +14,10 @@ void max_sum_div()
     5. вывести только наиольшую сумму
     */
     int n;
-    cin>>n;
+    ifs>>n;
     vector<int> numbers(n);
     for(int i = 0;i<n;i++){
-        cin>> numbers[i];
+        ifs >> numbers[i];
     }
     cout<<endl;
     for (int j(0); j<n; j++){
