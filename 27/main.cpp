@@ -15,6 +15,7 @@ void min_sum_distance()
 **/
     int n;
     cin>>n;
+    int min = 40001;
     vector<int> numbers(n);
     for(int i = 0; i<n; i++){
         cin>>numbers[i];
@@ -23,7 +24,8 @@ void min_sum_distance()
     for (int j(0); j<n; j++){
         for (int i(j+1); i<n; i++){
             if(i-j>=4){
-        cout << numbers[j]<<" "<<numbers[i]<<endl;
+        min = numbers[j] + numbers[i];
+        cout << min<<endl;
             }
         }
     }
